@@ -1,6 +1,7 @@
 namespace Nourishify.API.Security.Authorization.Attributes;
 
-public class AllowAnonymousAttribute
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+public class AllowAnonymousAttribute : Attribute
 {
     
 }
