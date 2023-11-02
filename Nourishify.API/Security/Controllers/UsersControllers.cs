@@ -61,7 +61,7 @@ namespace Nourishify.API.Security.Controllers
         }
 
         // Método HTTP PUT para actualizar un usuario por su ID
-        [AuthorizeAdmin] // Requiere que el usuario tenga el rol de administrador para acceder a este método
+        [AllowAnonymous] // [AuthorizeAdmin] // Requiere que el usuario tenga el rol de administrador para acceder a este método
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, UpdateRequest request)
         {
@@ -70,7 +70,7 @@ namespace Nourishify.API.Security.Controllers
         }
 
         // Método HTTP DELETE para eliminar un usuario por su ID
-        [AuthorizeAdmin] // Requiere que el usuario tenga el rol de administrador para acceder a este método
+        [AllowAnonymous] // [AuthorizeAdmin] // Requiere que el usuario tenga el rol de administrador para acceder a este método
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
