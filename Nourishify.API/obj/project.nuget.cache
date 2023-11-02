@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "AL92uWiM32M/m650bNIXU6yA5XIhPSNhZy8fgaOKb7BMSKJmJHX9LhB8OKGK1qSyRrgwGS3gXrX1UFUyVylYrA==",
+  "dgSpecHash": "QQUjwkQ8e0Aa7cHnjzGXnVJN3AN1O4ghfzl1TUSThI93JVfy1JzDGp3preipqiDOhZV48I0hETWulgPEMIYEjQ==",
   "success": true,
   "projectFilePath": "/home/daiki/Projects/upc/web/backend/Nourishify.API/Nourishify.API/Nourishify.API.csproj",
   "expectedPackageFiles": [
+    "/home/daiki/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/home/daiki/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/daiki/.nuget/packages/entityframeworkcore.createdupdateddate/7.0.10/entityframeworkcore.createdupdateddate.7.0.10.nupkg.sha512",
     "/home/daiki/.nuget/packages/google.protobuf/3.5.1/google.protobuf.3.5.1.nupkg.sha512",
     "/home/daiki/.nuget/packages/microsoft.aspnetcore.openapi/7.0.13/microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
+    "/home/daiki/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/daiki/.nuget/packages/microsoft.entityframeworkcore/7.0.13/microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
     "/home/daiki/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.13/microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
     "/home/daiki/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.13/microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",

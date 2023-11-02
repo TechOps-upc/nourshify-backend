@@ -1,6 +1,7 @@
-namespace Nourishify.API.Security.Controllers;
-
-public class UsersControllers
+namespace Nourishify.API.Security.Controllers
 {
+    public class UsersControllers
+    {
     
+    }
 }
