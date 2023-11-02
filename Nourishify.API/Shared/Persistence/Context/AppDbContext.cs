@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Nourishify.API.Security.Domain.Models;
+using Nourishify.API.Shared.Extensions;
 
 namespace Nourishify.API.Shared.Persistence.Context;
 
@@ -36,5 +37,8 @@ public class AppDbContext : DbContext
         builder.Entity<User>().Property(p => p.FirstName).IsRequired();
         builder.Entity<User>().Property(p => p.LastName).IsRequired();
         
+        
+        // Apply Snake Case Naming Convention
+        builder.UseSnakeCaseNamingConvention();
     }
 }
