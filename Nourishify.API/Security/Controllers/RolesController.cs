@@ -3,6 +3,8 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Nourishify.API.Security.Domain.Models;
 using Nourishify.API.Security.Domain.Services;
+using Nourishify.API.Security.Resources;
+using Nourishify.API.Shared.Extensions;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace Nourishify.API.Security.Controllers

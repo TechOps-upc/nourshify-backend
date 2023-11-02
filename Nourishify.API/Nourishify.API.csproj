@@ -20,7 +20,6 @@
 
     <ItemGroup>
       <Folder Include="Security\Mapping\" />
-      <Folder Include="Shared\Extensions\" />
     </ItemGroup>
 
 </Project>
