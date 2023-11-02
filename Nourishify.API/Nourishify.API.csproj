@@ -22,7 +22,6 @@
       <Folder Include="Security\Exceptions\" />
       <Folder Include="Security\Mapping\" />
       <Folder Include="Security\Resources\" />
-      <Folder Include="Security\Services\" />
       <Folder Include="Shared\Extensions\" />
     </ItemGroup>
 
