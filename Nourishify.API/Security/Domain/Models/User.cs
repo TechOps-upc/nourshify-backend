@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace Nourishify.API.Security.Domain.Models;
 
 public class User
@@ -9,4 +11,7 @@ public class User
     public int RoleId { get; set; }
     //Relationship
     public Role Role { get; set; }
+    
+    [JsonIgnore]
+    public string PasswordHash { get; set; }
 }
