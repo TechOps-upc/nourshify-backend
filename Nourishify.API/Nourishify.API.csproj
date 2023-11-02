@@ -19,7 +19,9 @@
     <ItemGroup>
       <Folder Include="Security\Authorization\" />
       <Folder Include="Security\Controllers\" />
-      <Folder Include="Security\Domain\" />
+      <Folder Include="Security\Domain\Models\" />
+      <Folder Include="Security\Domain\Repositories\" />
+      <Folder Include="Security\Domain\Services\" />
       <Folder Include="Security\Exceptions\" />
       <Folder Include="Security\Mapping\" />
       <Folder Include="Security\Persistence\" />
