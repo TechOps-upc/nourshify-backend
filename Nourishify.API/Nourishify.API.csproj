@@ -17,7 +17,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Security\Controllers\" />
       <Folder Include="Security\Mapping\" />
       <Folder Include="Security\Resources\" />
       <Folder Include="Shared\Extensions\" />
