@@ -18,7 +18,6 @@
 
     <ItemGroup>
       <Folder Include="Shared\Extensions\" />
-      <Folder Include="Shared\Persistence\" />
     </ItemGroup>
 
 </Project>
