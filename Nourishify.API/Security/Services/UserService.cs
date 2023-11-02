@@ -32,12 +32,12 @@ namespace Nourishify.API.Security.Services
         // Método para autenticar a un usuario
         public async Task<AuthenticateResponse> Authenticate(AuthenticateRequest request)
         {
-            var user = await _userRepository.FindByUsernameAsync(request.Username); // Busca al usuario por su nombre de usuario
+            var user = await _userRepository.FindByEmailAsync(request.Email); // Busca al usuario por su email
 
             // Validación de la autenticación
             if (user == null || !BCryptNet.Verify(request.Password, user.PasswordHash))
             {
-                throw new AppException("Username or password is incorrect"); // Lanza una excepción si el usuario no existe o la contraseña es incorrecta
+                throw new AppException("Email or password is incorrect"); // Lanza una excepción si el usuario no existe o la contraseña es incorrecta
             }
 
             // Generación del token JWT para la autenticación exitosa
@@ -74,9 +74,9 @@ namespace Nourishify.API.Security.Services
         public async Task RegisterAsync(RegisterRequest request)
         {
             // Validación de la existencia del nombre de usuario
-            if (_userRepository.ExistsByUsername(request.Username))
+            if (_userRepository.ExistsByEmail(request.Email))
             {
-                throw new AppException("Username '" + request.Username + "' is already taken"); // Lanza una excepción si el nombre de usuario ya está en uso
+                throw new AppException("Email '" + request.Email + "' is already taken"); // Lanza una excepción si el nombre de usuario ya está en uso
             }
 
             // Validación de la existencia del rol

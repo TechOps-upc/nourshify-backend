@@ -36,6 +36,16 @@ public class UserRepository : BaseRepository, IUserRepository
     {
         return _context.Users.Any(x => x.Username == username);
     }
+    
+    public async Task<User> FindByEmailAsync(string email)
+    {
+        return await _context.Users.SingleOrDefaultAsync(x => x.Email == email);
+    }
+
+    public bool ExistsByEmail(string email)
+    {
+        return _context.Users.Any(x => x.Email == email);
+    }
 
     public User FindById(int id)
     {
