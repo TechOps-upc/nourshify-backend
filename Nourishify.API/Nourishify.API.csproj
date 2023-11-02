@@ -17,10 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Security\Authorization\Middleware\" />
-      <Folder Include="Security\Authorization\Settings\" />
       <Folder Include="Security\Controllers\" />
-      <Folder Include="Security\Exceptions\" />
       <Folder Include="Security\Mapping\" />
       <Folder Include="Security\Resources\" />
       <Folder Include="Shared\Extensions\" />
